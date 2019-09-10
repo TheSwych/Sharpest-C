@@ -1,0 +1,26 @@
+int heiT;
+            int ass;
+            int bass;
+            WriteLine("Enter Trapazoid height");
+            heiT = int.Parse(ReadLine());
+            WriteLine("Now the first base");
+            ass = int.Parse(ReadLine());
+            WriteLine("and the last base");
+            bass = int.Parse(ReadLine());
+            WriteLine("The Trapazoid area, using {0}, {1} and {2} is {3}", heiT, ass, bass, Trap(ass, bass, heiT));
+            ReadLine();
+            int CylnH;
+            int CylnR;
+            WriteLine("enter height");
+            CylnH = int.Parse(ReadLine());
+            WriteLine("enter radius");
+            CylnR = int.Parse(ReadLine());
+            WriteLine("The area of {0 and {1} is {2}", CylnH, CylnR, Cyln(CylnH, CylnR));
+            public static double Trap(int a, int b, int h)
+        {
+            return (a + b / 2) * h;
+        }
+        public static double Cyln(int rad, int hei)
+        {
+            return 2 * Math.PI * rad * hei + 2 * Math.PI * (rad * rad);
+        }
