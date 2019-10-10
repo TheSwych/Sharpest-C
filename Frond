@@ -24,3 +24,21 @@ int heiT;
         {
             return 2 * Math.PI * rad * hei + 2 * Math.PI * (rad * rad);
         }
+        
+        
+         int i, j, n, p, q;
+
+            Write("Input number of rows : ");
+            n = int.Parse(ReadLine());
+            for (i = 1; i <= n; i++)
+            {
+                if (i % 2 == 0)
+                { p = 1; q = 0; }
+                else
+                { p = 0; q = 1; }
+                for (j = 1; j <= i; j++)
+                    if (j % 2 == 0)
+                        Write("{0}", p);
+                    else
+                        Write("{0}", q);
+                Write("\n");
