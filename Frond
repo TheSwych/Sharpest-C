@@ -42,3 +42,17 @@ int heiT;
                     else
                         Write("{0}", q);
                 Write("\n");
+
+
+
+int n, i, t = 9;
+            int sum = 0;
+            Write("Input the number or terms :");
+            n = int.Parse(ReadLine());
+            for (i = 1; i <= n; i++)
+            {
+                sum += t;
+                Write("{0}   ", t);
+                t = t * 10 + 9;
+            }
+            Write("\nThe sum of the saries = {0} \n", sum);
